@@ -1,0 +1,129 @@
+:root {
+  --primary-color: #F44336;
+  --secondary-color: #2196F3;
+  --background-color: #212121;
+  --text-color: #FFFFFF;
+  --border-color: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background-color);
+}
+
+header {
+  background: var(--primary-color);
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > h1 {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: Arial, sans-serif;
+}
+
+.score-board {
+  margin: 20px auto;
+  border: 4px solid var(--border-color);
+  border-radius: 50%;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  color: var(--text-color);
+  font-size: 3rem;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.badge {
+  background: var(--secondary-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 5px 10px;
+  font-family: Arial, sans-serif;
+  border-radius: 20px;
+}
+
+#user-label {
+  position: absolute;
+  top: 30px;
+  left: -30px;
+}
+
+#computer-label {
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+.result {
+  font-size: 2rem;
+  color: var(--text-color);
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.result > p {
+  font-weight: bold;
+}
+
+.choices {
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice {
+  border: 4px solid var(--border-color);
+  border-radius: 50%;
+  margin: 0 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.choice:hover {
+  background: var(--primary-color);
+  border-color: var(--secondary-color);
+}
+
+#action-message {
+  text-align: center;
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.green-glow {
+  border-color: #4CAF50;
+  box-shadow: 0 0 10px #4CAF50;
+}
+
+.red-glow {
+  border-color: #F44336;
+  box-shadow: 0 0 10px #F44336;
+}
+
+.gray-glow {
+  border-color: #9E9E9E;
+  box-shadow: 0 0 10px #9E9E9E;
+}
